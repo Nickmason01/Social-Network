@@ -13,14 +13,19 @@ const thoughtSchema = new Schema(
         },
         createdAt: {
             type: Date,
-            default: Date.now(),
+            dateFormat,
         },
         username: {
             type: String,
             required: true
-        }
-       
-    }
+        },
+        reactions : [reactionSchema],       
+    },
+    {
+        toJSON: {
+          getters: true,
+        },
+      }
 );
 thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length
