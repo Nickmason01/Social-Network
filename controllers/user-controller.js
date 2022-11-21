@@ -1,7 +1,7 @@
-const { Thought, User } = require('../models');
+const { User, Thought } = require('../models');
 
-const thoughtController = {
+const userController = {
  
 };
 
-module.exports = thoughtController;
+module.exports = userController;
