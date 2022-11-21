@@ -12,7 +12,7 @@ const userController = {
     .then((user) =>
     !user
     ? res.status(404).json({message: 'No user by that ID'})
-    : res.json(course)
+    : res.json(user)
     )
     .catch((err) => res.status(500).json(err));
 },
@@ -40,6 +40,11 @@ deleteUser(req, res) {
     !user
     ? res.stastus(404).json({message: 'No user by that ID'})
     : Thought.deleteMany({_id: {$in: user.thoughts}}))
+},
+addFriend(req, res) {
+    User.findOneAndUpdate(
+        {_}
+    )
 }
 }; 
 
