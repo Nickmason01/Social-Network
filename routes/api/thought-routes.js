@@ -3,7 +3,9 @@ const {
     getThoughts,
     getOneThought,
     createThought,
-    deleteThought
+    deleteThought,
+    addThoughtReaction,
+    deleteThoughtReaction,
 
   } = require("../../controllers/thought-controller");
 
@@ -11,4 +13,7 @@ const {
 
   router.route('/:thoughtId').get(getOneThought).delete(deleteThought);
 
+  router.route('/:thoughtId/reactions').post(addThoughtReaction);
+  router.route('/:thoughtId/reactions/:reactionId').delete(deleteThoughtReaction);
+  
   module.exports = router
