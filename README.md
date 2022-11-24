@@ -18,6 +18,8 @@ Install from Github, run npm start from server.js
 ## Usage
 This application can be used as a framework for backend functionailty for social media applications. It shows CRUD methods for creating accounts, posting thoughts and reactions, and adding and maintaining a list of friends. 
 
+Video Walkthrough Link:
+
 https://drive.google.com/file/d/18R4I_KfVZ8dU1UMDt-QU6jd1PjhlPJOV/view
 
 ## Credits
